@@ -1,0 +1,28 @@
+<div class="row panel panel-default espaco">
+
+    <!--Título-->
+    <div class="row text-left"><h4>LOJA</h4></div>
+  
+  
+    <!--Conteudo dinamico-->
+
+    <div class="row">
+
+        <i *ngFor="let produto of produtos">
+         <div class="col-xs-4">
+            <img src="../assets/{{produto.icon}}"><span>{{produto.nome}}</span>
+         </div>
+        </i>
+
+    </div>
+
+
+
+
+    <!--Botões-->
+    <div class="row text-right espaco">
+       <button (click)="AdicionarAbacaxi()" class="btn btn-default">+ Abacaxi</button>
+       <button (click)="AdicionarBanana()" class="btn btn-default">+ Banana</button>
+       <button (click)="AdicionarLaranja()" class="btn btn-default">+ Laranja</button>
+    
+</div>

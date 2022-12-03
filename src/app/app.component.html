@@ -1,0 +1,22 @@
+<div class="container" panel panel-default espaco>
+  
+  <!-- navegação -->
+  <div class="row">
+    <!--Logo-->
+    <div class="col-sm-6 col-xs-12">
+
+      <img src="../assets/peixe.jpg " width="100" height="100">
+
+    </div>
+
+    <!--Botões 'Loja' e 'stock'-->
+    <div class="col-sm-6 col-xs-12 text-right">
+      <button (click)="MostrarLoja()" class="btn btn-primary ">Loja</button>
+      <button (click)="MostrarStock()" class="btn btn-primary ">stock</button>
+
+    </div>
+  </div>
+  
+  <app-loja *ngIf="loja_visivel"></app-loja>
+  <app-stock *ngIf="stock_visivel"></app-stock>
+</div>

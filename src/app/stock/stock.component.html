@@ -1,0 +1,45 @@
+<div class="row panel panel-default espaco-stock">
+
+    <div class="row">
+ 
+        <h2>STOCK</h2>
+
+    </div>
+ <!--Quantidade de produtos-->
+    <div class="row">
+        <p [ngStyle]="{color: EstiloAbacaxi()}">Abacaxis: {{total_abacaxi}}</p>
+    </div>
+
+    <div class="row">
+        <p [ngStyle]="{color: EstiloBanana()}">Bananas: {{total_bananas}}</p>
+    </div>
+
+    <div class="row">
+        <p [ngStyle]="{color: EstiloLaranja()}">Laranjas: {{total_laranjas}}</p>
+    </div>
+     
+    <div class="row">
+        <p>TOTAL: {{CalcularTotal}}</p>
+    </div>
+
+
+    <!--Botoes-->
+    <div class="row text-right">
+        <button (click)="AdicionarAbacaxi()" class="btn btn-default">+ Abacaxis</button>
+        <button (click)="RemoverAbacaxi()" class="btn btn-default">- Abacaxis</button>
+
+        <button (click)="AdicionarBanana()" class="btn btn-default">+ Banana</button>
+        <button (click)="RemoverBanana()" class="btn btn-default">- Banana</button>
+
+        <button (click)="AdicionarLaranja()" class="btn btn-default">+ Laranja</button>
+        <button (click)="RemoverLaranja()" class="btn btn-default">- Laranja</button>
+
+   
+   
+   
+   
+   
+   
+    </div>
+
+</div>
